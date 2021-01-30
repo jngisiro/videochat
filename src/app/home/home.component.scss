@@ -1,0 +1,51 @@
+img {
+  width: 100%;
+}
+
+#heading {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+.ui.statistics {
+}
+
+#features {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+
+  .item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    .icon {
+      margin-bottom: 10px;
+    }
+
+    .content {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+
+      p {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 5px;
+      }
+    }
+  }
+}
