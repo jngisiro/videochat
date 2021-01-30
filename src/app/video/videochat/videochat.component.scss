@@ -1,0 +1,62 @@
+.video-chat {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  top: 0;
+  z-index: 1;
+}
+
+.screen {
+  position: absolute;
+  width: 350px;
+  height: 250px;
+  z-index: 20;
+  top: 10px;
+  right: 10px;
+  object-fit: cover;
+  border: 1px solid #555;
+}
+
+.controls {
+  position: absolute;
+  z-index: 10;
+  width: 100vw;
+  bottom: 0;
+  padding: 20px 0;
+  .icon {
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .holder {
+    display: flex;
+    flex-flow: row;
+    // background-color: rgba(255, 255, 255, 0.3);
+    justify-content: space-around;
+
+    .meeting-title .ui.header {
+      color: #fff;
+    }
+
+    .meeting-connection p {
+      color: #fff;
+      margin-right: 20px;
+    }
+
+    .meeting-controls i {
+      margin-right: 20px;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .meeting-title,
+    .meeting-controls,
+    .meeting-connection {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+}
