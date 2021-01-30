@@ -1,0 +1,30 @@
+.footer {
+  margin-top: 100px;
+  background-color: #000;
+  color: #ddd;
+
+  #main {
+    .ui.header {
+      color: #999;
+      margin-top: 0;
+    }
+    text-align: center;
+    padding: 40px 0;
+    #info {
+      img {
+        width: 30%;
+      }
+    }
+  }
+
+  #bottom-bar {
+    background-color: #000006;
+    padding: 0 10px;
+    margin: 0;
+    color: #333;
+
+    #copyright {
+      text-align: right;
+    }
+  }
+}
