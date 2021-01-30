@@ -7,6 +7,11 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
   },
+  {
+    path: 'chat',
+    loadChildren: () =>
+      import('./video/video.module').then((m) => m.VideoModule),
+  },
 ];
 
 @NgModule({

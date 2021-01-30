@@ -1,0 +1,31 @@
+<video class="video-chat" [poster]="showScreenPoster()" #videoElement></video>
+<video class="screen" [poster]="showScreenPoster()" #screenElement></video>
+<div class="controls">
+  <div class="holder">
+    <div class="meeting-title">
+      <h3 class="ui header">Meeting of the Minds</h3>
+    </div>
+
+    <div class="meeting-controls">
+      <div class="video-feed">
+        <i
+          class="eye icon"
+          [ngClass]="{ slash: toggleVideo }"
+          (click)="toggleVideo = !toggleVideo"
+        ></i>
+      </div>
+      <div class="audio-feed">
+        <i
+          class="microphone icon"
+          [ngClass]="{ slash: toggleAudio }"
+          (click)="!(toggleAudio = !toggleAudio)"
+        ></i>
+      </div>
+    </div>
+
+    <div class="meeting-connection">
+      <!-- <p>Set tings</p> -->
+      <button class="ui red button">Disconnect</button>
+    </div>
+  </div>
+</div>
